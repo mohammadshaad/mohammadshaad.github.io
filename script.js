@@ -1,10 +1,11 @@
 // List of sentences
 var _CONTENT = [ 
-	"UI/UX Designer", 
-	"Front-end Web Developer", 
-	"Open-source Contributor",
-    "Avid Reader", 
-	"Love to play Cricket and Badminton"
+	"I'm A",
+	"Student", 
+	"Reader", 
+	"Painist",
+    "Video Editor", 
+	"Right Arm Fast Bowler"
 ];
 
 // Current sentence being processed
@@ -32,7 +33,7 @@ function Type() {
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
 		// Hide the cursor
-		_CURSOR.style.display = 'none';
+		// _CURSOR.style.display = 'none';
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
