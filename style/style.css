@@ -588,7 +588,7 @@ h1::selection {
   }
 
   #blogs {
-    height: 900px;
+    height: 1050px;
     background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
   }
 
@@ -606,11 +606,12 @@ h1::selection {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 60px;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
   }
 
   .blog-title {
-    /* background: blueviolet; */
     width: 100%;
     text-align: center;
   }
@@ -620,12 +621,12 @@ h1::selection {
     font-weight: 600;
   }
 
-  .blog-wrapper {
+  .blog-card-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    /* background: palevioletred; */
+    flex-direction: column;
+    gap: 40px;
   }
 
   .blog-card {
@@ -682,8 +683,7 @@ h1::selection {
   .blog-content {
     color: var(--Black);
     width: 80%;
-    text-align: justify;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .blog-content h4 {
@@ -692,6 +692,7 @@ h1::selection {
   }
 
   .blog-content p {
+    text-align: justify;
     margin-top: 5px;
     font-size: 12px;
   }
@@ -1186,10 +1187,11 @@ h1::selection {
     font-weight: 600;
   }
 
-  .blog-wrapper {
+  .blog-card-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 40px;
     width: 100%;
     /* background: palevioletred; */
   }
@@ -1248,8 +1250,7 @@ h1::selection {
   .blog-content {
     color: var(--Black);
     width: 80%;
-    text-align: justify;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .blog-content h4 {
@@ -1258,6 +1259,7 @@ h1::selection {
   }
 
   .blog-content p {
+    text-align: justify;
     margin-top: 5px;
     font-size: 14px;
   }
