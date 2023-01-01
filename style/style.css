@@ -588,7 +588,7 @@ h1::selection {
   }
 
   #blogs {
-    height: 1050px;
+    height: 2000px;
     background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
   }
 
