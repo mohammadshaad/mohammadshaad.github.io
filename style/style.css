@@ -559,6 +559,7 @@ h1::selection {
     gap: 20px;
     border-radius: 10px;
     padding: 100px 60px;
+    width: 18.75rem;
     border: 1px solid var(--LightBlue);
     color: var(--Black);
   }
@@ -820,10 +821,10 @@ h1::selection {
     padding: 12px 20px;
     text-decoration: none;
     border-radius: 10px;
+    text-align: center;
     border: 1px solid var(--DarkBlue);
     color: var(--Black);
     margin-bottom: 60px;
-    margin-top: 10px;
     font-size: 14px;
   }
 
@@ -1487,10 +1488,11 @@ h1::selection {
     padding: 12px 20px;
     text-decoration: none;
     border-radius: 10px;
+    width: 50%;
+    text-align: center;
     border: 1px solid var(--DarkBlue);
     color: var(--Black);
     margin-bottom: 60px;
-    margin-top: 10px;
   }
 
   .resume-download-btn:hover {
