@@ -588,9 +588,112 @@ h1::selection {
   }
 
   #blogs {
-    height: 2000px;
+    height: 900px;
     background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
   }
+
+  .slide-container {
+    max-width: 1120px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 40px 0;
+  }
+  .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 400px;
+  }
+  .card {
+    border-radius: 20px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    padding: 10px 14px;
+  }
+  .card-image {
+    position: relative;
+    padding: 10px;
+  }
+  .card-image .card-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .viewmore-button {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--Black);
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin: 14px;
+    cursor: pointer;
+    border: 1px solid var(--DarkBlue);
+    transition: all 0.5s ease;
+  }
+  .viewmore-button:hover {
+    color: var(--White);
+    background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
+    border: none;
+  }
+
+  .swiper-navBtn {
+    color: var(--White) !important;
+    opacity: 50%;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover {
+    color: var(--White) !important;
+    opacity: 100%;
+    transition: all 0.3s ease;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 35px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-pagination-bullet {
+    background-color: white !important;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4070f4;
+  }
+
 
   .blog-container {
     width: 100%;
