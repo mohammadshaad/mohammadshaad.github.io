@@ -27,6 +27,10 @@
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="style/swiper-bundle.min.css">
+
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -65,9 +69,6 @@
         <li>
           <a href="#blogs" class="menu-item hvr-underline-from-left">BLOGS</a>
         </li>
-        <li>
-          <a href="#resume" class="menu-item hvr-underline-from-left">RESUME</a>
-        </li>
       </ul>
 
       <!-- Toggle menu screen -->
@@ -86,9 +87,6 @@
           </li>
           <li class="menu-item">
             <a href="#blogs" class="hvr-underline-from-left item">BLOGS</a>
-          </li>
-          <li class="menu-item">
-            <a href="#resume" class="hvr-underline-from-left item">RESUME</a>
           </li>
         </ul>
       </div>
@@ -149,6 +147,7 @@
               dancing, drama and I also like to play piano.
             </p>
           </div>
+          <a href="/MohammadShaad_resume.pdf" class="resume-download-btn" download="MohammadShaad_resume.pdf">DOWNLOAD MY RESUME</a>
         </div>
       </div>
     </div>
@@ -182,107 +181,97 @@
   </section>
 
   <section id="blogs" data-aos="fade-up">
-    <div class="blog-container">
+    <div class="blog-container swiper">
       <div class="blog-wrapper">
         <div class="blog-title">
           <h3>MY BLOGS</h3>
         </div>
-        <div class="blog-card-wrapper">
-          <div class="blog-card">
-            <img src="/images/blog1.png" alt="blog-image" class="blog-header-img">
-            <div class="open-blog">
-              <a href="https://mohammad-shaad.medium.com/characteristics-of-a-good-user-experience-cb4fb7a6a296?source=user_profile---------0----------------------------"
-                target="_blank" class="">
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
 
-              <div class="blog-content">
-                <h4>
-                  Characteristics of a Good User Experience
-                </h4>
+                  <div class="card-image">
+                    <img src="images/blog1.png" alt="" class="card-img">
+                  </div>
+                </div>
 
-                <p>
-                  Good design is easy to spot but often hard to pin down. What exactly makes a product effective to its
-                  users? Is it a matter of simplicity, structure, or functionality? The answer depends on the product in
-                  question.
-                </p>
+                <div class="card-content">
+                  <h2 class="name">Characteristics of a Good User Experience</h2>
+                  <p class="description">Good design is easy to spot but often hard to pin down. What exactly makes a
+                    product effective to its users?
+                  </p>
 
+                  <a href="https://medium.com/@mohammad-shaad/characteristics-of-a-good-user-experience-cb4fb7a6a296" target="_blank" class="viewmore-button">View More</a>
+                </div>
               </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+
+                  <div class="card-image">
+                    <img src="images/blog2.webp" alt="" class="card-img">
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">4 Ways to Bind Event Handlers in React</h2>
+                  <p class="description">We bind event handlers in react because of the way THIS keyword works in
+                    JavaScript
+                  </p>
+
+                  <a href="https://medium.com/@mohammad-shaad/4-ways-to-bind-event-handlers-in-react-8d0f8454dd13" target="_blank" class="viewmore-button">View More</a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+
+                  <div class="card-image">
+                    <img src="images/blog3.webp" alt="" class="card-img">
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Conditional Rendering in React</h2>
+                  <p class="description">You may often need to show or hide
+                    some HTML based on a certain condition
+                  </p>
+
+                  <a href="https://medium.com/@mohammad-shaad/conditional-rendering-in-react-64c389345ed1" target="_blank" class="viewmore-button">View More</a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+
+                  <div class="card-image">
+                    <img src="images/blog4.webp" alt="" class="card-img">
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">List Rendering in React</h2>
+                  <p class="description">In React, you can use a list rendering technique when you want to render a list
+                    of items based on an array of data
+                  </p>
+
+                  <a href="https://medium.com/@mohammad-shaad/list-rendering-in-react-74887b98f04" target="_blank" class="viewmore-button">View More</a>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="blog-card">
-            <img src="/images/blog2.webp" alt="blog-image" class="blog-header-img">
-            <div class="open-blog">
-              <a href="https://mohammadshaad.hashnode.dev/4-ways-to-bind-event-handlers-in-react" target="_blank"
-                class="">
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
 
-              <div class="blog-content">
-                <h4>
-                  4 Ways to Bind Event Handlers in React
-                </h4>
-
-                <p>
-                  Bind event handlers in react because of the way THIS keyword works in JavaScript, not because of how
-                  react works. THIS keyword is undefined in an event handler and that is the reason event binding is
-                  necessary in react class components.
-                </p>
-
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <img src="/images/blog3.webp" alt="blog-image" class="blog-header-img">
-            <div class="open-blog">
-              <a href="https://mohammadshaad.hashnode.dev/4-ways-to-bind-event-handlers-in-react" target="_blank"
-                class="">
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-
-              <div class="blog-content">
-                <h4>
-                  Conditional Rendering in React
-                </h4>
-
-                <p>
-                  When you are building react applications you may often need to show or hide some HTML based on a
-                  certain condition luckily conditional rendering in react works the same way conditions work in
-                  JavaScript.
-
-                </p>
-
-              </div>
-            </div>
-          </div>
-          <div class="blog-card">
-            <img src="/images/blog3.webp" alt="blog-image" class="blog-header-img">
-            <div class="open-blog">
-              <a href="https://mohammadshaad.hashnode.dev/4-ways-to-bind-event-handlers-in-react" target="_blank"
-                class="">
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-
-              <div class="blog-content">
-                <h4>
-                  List Rendering in React
-                </h4>
-
-                <p>
-                  In React, you can use a list rendering technique when you want to render a list of items based on an
-                  array of data. This can be useful when you have a collection of data that you want to display in a
-                  specific order or when you want to render a list of items that may change over time.
-                </p>
-
-              </div>
-            </div>
-          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
         </div>
+
+
       </div>
     </div>
   </section>
 
-  <section id="resume" data-aos="fade-up">
+  <!-- <section id="resume" data-aos="fade-up">
     <div class="resume">
       <h3 class="resume-download">DOWNLOAD MY RESUME</h3>
 
@@ -291,7 +280,7 @@
 
       <img src="MohammadShaad_resume.png" alt="resume" class="resume-png" />
     </div>
-  </section>
+  </section> -->
 
   <footer data-aos="fade-up">
     <div class="footer-container">
@@ -377,6 +366,7 @@
     </div>
   </footer>
 
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -385,6 +375,7 @@
     });
   </script>
   <script src="js/script.js"></script>
+  <script src="js/blogs.js"></script>
 </body>
 
 </html>
