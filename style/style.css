@@ -588,7 +588,7 @@ h1::selection {
   }
 
   #blogs {
-    height: 1050px;
+    height: 2000px;
     background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
   }
 
@@ -1155,7 +1155,7 @@ h1::selection {
   }
 
   #blogs {
-    height: 900px;
+    height: 1400px;
     background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
   }
 
@@ -1191,6 +1191,7 @@ h1::selection {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
     width: 100%;
     /* background: palevioletred; */
