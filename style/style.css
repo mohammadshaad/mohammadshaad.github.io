@@ -514,6 +514,7 @@ h1::selection {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .webdev {
@@ -525,6 +526,7 @@ h1::selection {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .card-text {
@@ -562,11 +564,12 @@ h1::selection {
     width: 18.75rem;
     border: 1px solid var(--LightBlue);
     color: var(--Black);
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .card-view:hover {
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
-    transition: all 0.3s ease;
+    transition: all 0.3s;
   }
 
   .uiux,
@@ -694,7 +697,6 @@ h1::selection {
   .swiper-pagination-bullet-active {
     background-color: #4070f4;
   }
-
 
   .blog-container {
     width: 100%;
@@ -1183,6 +1185,7 @@ h1::selection {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .webdev {
@@ -1194,6 +1197,7 @@ h1::selection {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .card-text {
@@ -1212,6 +1216,7 @@ h1::selection {
   .figma-logo:hover,
   .github-logo:hover {
     color: var(--White);
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .card-title {
@@ -1230,12 +1235,13 @@ h1::selection {
     border-radius: 10px;
     border: 1px solid var(--LightBlue);
     color: var(--Black);
+    transition: all 0.3s;
   }
 
   .portfolio-container .portfolio-wrapper .card-view:hover {
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
     color: var(--White);
-    transition: all 0.3s ease;
+    transition: all 0.3s;
   }
 
   .uiux,
@@ -1500,6 +1506,263 @@ h1::selection {
     color: var(--White);
     transition: all 0.3s ease;
   }
+
+  #skills {
+    height: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills-header {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .skills-wrapper {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* padding: 30px; */
+    height: 170px;
+    width: 170px;
+    background-color: var(--White);
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s;
+  }
+  
+  .skill:hover {
+    box-shadow: 0px 0px 10px 1px #26262680;
+    background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: var(--White);
+  }
+
+  .skill i {
+    font-size: 50px;
+  }
+
+  .skill span {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+
+
+  /*   
+  .skill-bars{
+    padding: 55px 80px;
+    width: 56.25rem;
+    background: var(--White);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--DarkBlue);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 100%;
+  }
+  .bar .progress-line.css span{
+    width: 98%;
+  }
+  .bar .progress-line.js span{
+    width: 95%;
+  }
+  .bar .progress-line.node span{
+    width: 98%;
+  }
+  .bar .progress-line.express span{
+    width: 98%;
+  }
+  .bar .progress-line.tailwind span{
+    width: 100%;
+  }
+  .bar .progress-line.bootstrap span{
+    width: 100%;
+  }
+  .bar .progress-line.figma span{
+    width: 100%;
+  }
+  .bar .progress-line.cpp span{
+    width: 85%;
+  }
+  .bar .progress-line.c span{
+    width: 85%;
+  }
+  .bar .progress-line.java span{
+    width: 85%;
+  }
+  .bar .progress-line.ejs span{
+    width: 100%;
+  }
+  .bar .progress-line.jquery span{
+    width: 90%;
+  }
+  .bar .progress-line.python span{
+    width: 90%;
+  }
+  .bar .progress-line.react span{
+    width: 50%;
+  }
+  .bar .progress-line.mysql span{
+    width: 70%;
+  }
+  .bar .progress-line.mongo span{
+    width: 50%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "100%";
+  }
+  .progress-line.css span::after{
+    content: "98%";
+  }
+  .progress-line.js span::after{
+    content: "95%";
+  }
+  .progress-line.node span::after{
+    content: "98%";
+  }
+  .progress-line.express span::after{
+    content: "98%";
+  }
+  .progress-line.tailwind span::after{
+    content: "100%";
+  }
+  .progress-line.bootstrap span::after{
+    content: "100%";
+  }
+  .progress-line.figma span::after{
+    content: "100%";
+  }
+  .progress-line.cpp span::after{
+    content: "85%";
+  }
+  .progress-line.c span::after{
+    content: "85%";
+  }
+  .progress-line.java span::after{
+    content: "85%";
+  }
+  .progress-line.ejs span::after{
+    content: "100%";
+  }
+  .progress-line.jquery span::after{
+    content: "90%";
+  }
+  .progress-line.python span::after{
+    content: "90%";
+  }
+  .progress-line.react span::after{
+    content: "50%";
+  }
+  .progress-line.mysql span::after{
+    content: "80%";
+  }
+  .progress-line.mongo span::after{
+    content: "50%";
+  }
+   */
 
   footer {
     background: rgb(224, 224, 224);
