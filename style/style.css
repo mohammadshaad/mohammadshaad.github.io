@@ -840,6 +840,73 @@ h1::selection {
     width: 90%;
   }
 
+
+  #skills {
+    height: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills-header {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .skills-wrapper {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* padding: 30px; */
+    height: 100px;
+    width: 100px;
+    background-color: var(--White);
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s;
+  }
+  
+  .skill:hover {
+    box-shadow: 0px 0px 10px 1px #26262680;
+    background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
+    transform: scale(1.1);
+    transition: all 0.3s;
+    color: var(--White);
+  }
+
+  .skill i {
+    font-size: 30px;
+  }
+
+  .skill span {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+
   footer {
     background: rgb(224, 224, 224);
     height: 700px;
