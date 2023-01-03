@@ -1575,7 +1575,7 @@ h1::selection {
   }
 
   #skills {
-    height: 1300px;
+    height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
