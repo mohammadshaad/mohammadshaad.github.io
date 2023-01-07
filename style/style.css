@@ -836,6 +836,10 @@ h1::selection {
     transition: all 0.3s ease;
   }
 
+  .resume-download-btn i {
+    margin-right: 4px;
+  }
+
   .resume .resume-png {
     width: 90%;
   }
@@ -1579,6 +1583,10 @@ h1::selection {
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
     color: var(--White);
     transition: all 0.3s ease;
+  }
+
+  .resume-download-btn i {
+    margin-right: 4px;
   }
 
   #skills {
