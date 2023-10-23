@@ -1,148 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohammad Shaad Shaikh | Full Stack Web Developer | UI/UX Designer | Open-Source Contributor"
+    />
+    <meta
+      name="keywords"
+      content="mohammadshaad, shaad, mohammadshaadshaikh, web development, vit chennai, ui ux designing, open-source contributor"
+    />
+    <meta name="author" content="Mohammad Shaad" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mohammad Shaad Shaikh | Full Stack Web Developer | UI/UX Designer | Open-Source Contributor">
-  <meta name="keywords" content="mohammadshaad, shaad, mohammadshaadshaikh, web development, vit chennai, ui ux designing, open-source contributor">
-  <meta name="author" content="Mohammad Shaad">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
+    <link rel="stylesheet" href="style/style.css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-  <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <title>Mohammad Shaad</title>
+  </head>
 
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <body>
+    <div class="custom__cursor__outer"></div>
+    <div class="custom__cursor__inner"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <title>Mohammad Shaad</title>
-  
-</head>
-
-<body>
-  <div class="custom__cursor__outer"></div>
-  <div class="custom__cursor__inner"></div>
-
-  <div id="preloader">
-    <div class="loader">
-      <img src="logos/white.png" alt="logo" class="loader-logo" />
-      <div class="loader_bar" id="loader_bar"></div>
+    <div id="preloader">
+      <div class="loader">
+        <img src="logos/white.png" alt="logo" class="loader-logo" />
+        <div class="loader_bar" id="loader_bar"></div>
+      </div>
     </div>
-  </div>
 
-  <section id="home" data-aos="fade-up">
-    <div class="overlay"></div>
-    <nav class="nav">
-      <a href="index.html">
-        <img src="logos/1x/Asset 1.png" alt="" class="logo" />
-      </a>
+    <section id="home" data-aos="fade-up">
+      <div class="overlay"></div>
+      <nav class="nav">
+        <a href="index.html">
+          <img src="logos/1x/Asset 1.png" alt="" class="logo" />
+        </a>
 
-      <ul class="menu desktop-menu">
-        <li>
-          <a href="index.html" class="menu-item hvr-underline-from-left active-page">HOME</a>
-        </li>
-        <li>
-          <a href="#about" class="menu-item hvr-underline-from-left">ABOUT</a>
-        </li>
-        <li>
-          <a href="#portfolio" class="menu-item hvr-underline-from-left">PORTFOLIO</a>
-        </li>
-        <li>
-          <a href="#blogs" class="menu-item hvr-underline-from-left">BLOGS</a>
-        </li>
-        <li>
-          <a href="#skills" class="menu-item hvr-underline-from-left">SKILLS</a>
-        </li>
-      </ul>
-
-      <!-- Toggle menu screen -->
-      <i class="bi bi-list" id="toggle-menu"></i>
-      <div class="mobile-menu">
-        <i class="bi bi-x" id="close-btn"></i>
-        <ul class="menu menu-items">
-          <li class="menu-item">
-            <a href="index.html" class="hvr-underline-from-left item">HOME</a>
+        <ul class="menu desktop-menu">
+          <li>
+            <a
+              href="index.html"
+              class="menu-item hvr-underline-from-left active-page"
+              >HOME</a
+            >
           </li>
-          <li class="menu-item">
-            <a href="#about" class="hvr-underline-from-left item">ABOUT</a>
+          <li>
+            <a href="#about" class="menu-item hvr-underline-from-left">ABOUT</a>
           </li>
-          <li class="menu-item">
-            <a href="#portfolio" class="hvr-underline-from-left item">PORTFOLIO</a>
+          <li>
+            <a href="#portfolio" class="menu-item hvr-underline-from-left"
+              >PORTFOLIO</a
+            >
           </li>
-          <li class="menu-item">
-            <a href="#blogs" class="hvr-underline-from-left item">BLOGS</a>
+          <li>
+            <a href="#blogs" class="menu-item hvr-underline-from-left">BLOGS</a>
           </li>
-          <li class="menu-item">
-            <a href="#skills" class="hvr-underline-from-left item">SKILLS</a>
+          <li>
+            <a href="#skills" class="menu-item hvr-underline-from-left"
+              >SKILLS</a
+            >
           </li>
         </ul>
-      </div>
-    </nav>
-    <div class="hero">
-      <div class="hero-items">
-        <h3 class="hero-hello">Hello, I Am</h3>
-        <h1 class="hero-name">MOHAMMAD SHAAD</h1>
-        <a href="#about" class="hero-cta">
-          KNOW MORE
-          <i class="fa-solid fa-circle-chevron-right"></i>
-        </a>
-      </div>
-      <div class="hero-img">
-        <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_zw1coqqh.json" background="transparent"
+
+        <!-- Toggle menu screen -->
+        <i class="bi bi-list" id="toggle-menu"></i>
+        <div class="mobile-menu">
+          <i class="bi bi-x" id="close-btn"></i>
+          <ul class="menu menu-items">
+            <li class="menu-item">
+              <a href="index.html" class="hvr-underline-from-left item">HOME</a>
+            </li>
+            <li class="menu-item">
+              <a href="#about" class="hvr-underline-from-left item">ABOUT</a>
+            </li>
+            <li class="menu-item">
+              <a href="#portfolio" class="hvr-underline-from-left item"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="#blogs" class="hvr-underline-from-left item">BLOGS</a>
+            </li>
+            <li class="menu-item">
+              <a href="#skills" class="hvr-underline-from-left item">SKILLS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-items">
+          <h3 class="hero-hello">Hello, I Am</h3>
+          <h1 class="hero-name">MOHAMMAD SHAAD</h1>
+          <a href="#about" class="hero-cta">
+            KNOW MORE
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </a>
+        </div>
+        <div class="hero-img">
+          <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_zw1coqqh.json" background="transparent"
           speed="1" style="width: 450px; height: 450px" loop autoplay></lottie-player> -->
 
-        <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_bxt0mytn.json"  background="transparent"  speed="1.5"  style="width: 440px; height: 440px;"  loop  autoplay></lottie-player> -->
+          <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_bxt0mytn.json"  background="transparent"  speed="1.5"  style="width: 440px; height: 440px;"  loop  autoplay></lottie-player> -->
 
-        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hnwnp25c.json" background="transparent"
-          speed="1.5" loop autoplay></lottie-player>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="about-container">
-      <div class="about-wrapper">
-        <div class="about-photo" data-aos="fade-up">
-          <img src="images/mohammadshaadshaikh.jpg" alt="mohammadshaadshaikh" />
+          <lottie-player
+            src="https://assets8.lottiefiles.com/packages/lf20_hnwnp25c.json"
+            background="transparent"
+            speed="1.5"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
-        <div class="about-text" data-aos="fade-up">
-          <p class="my-story">My story</p>
-          <h2 class="who-am-i">Who am I?</h2>
-          <div class="about-para">
-            <p class="first-para">
-              As a fullstack web developer, UI/UX designer, and avid open source contributor, I've spent countless hours
-              tinkering with code, perfecting designs, and pushing the limits of what's possible on the web. When I'm
-              not busy creating visually stunning and intuitive interfaces, you can find me diving into the world of
-              cloud and DevOps, or using my video editing skills to craft compelling stories. All in all, I'm a tech
-              enthusiast with a passion for constantly learning and improving my skills. Currently, I am doing
-              Bachelor of Technology in Computer Science Engineering from Vellore Institute of Technology, Chennai.
-            </p>
-            <!-- <p class="second-para">
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <div class="about-wrapper">
+          <div class="about-photo" data-aos="fade-up">
+            <img
+              src="images/mohammadshaadshaikh.jpg"
+              alt="mohammadshaadshaikh"
+            />
+          </div>
+          <div class="about-text" data-aos="fade-up">
+            <p class="my-story">My story</p>
+            <h2 class="who-am-i">Who am I?</h2>
+            <div class="about-para">
+              <p class="first-para">
+                As a fullstack web developer, UI/UX designer, and avid open
+                source contributor, I've spent countless hours tinkering with
+                code, perfecting designs, and pushing the limits of what's
+                possible on the web. When I'm not busy creating visually
+                stunning and intuitive interfaces, you can find me diving into
+                the world of cloud and DevOps, or using my video editing skills
+                to craft compelling stories. All in all, I'm a tech enthusiast
+                with a passion for constantly learning and improving my skills.
+                Currently, I am doing Bachelor of Technology in Computer Science
+                Engineering from Vellore Institute of Technology, Chennai.
+              </p>
+              <!-- <p class="second-para">
               I can write code in Python, C, CPP, Java and JavaScript. I have
               experience with UI/UX and logo designing. I love to make designs
               with Adobe Photoshop, Illustrator and Figma. I also work on
@@ -158,157 +203,179 @@
               extra-curricular activities like elocution competitions,
               dancing, drama and I also like to play piano.
             </p> -->
+            </div>
+            <a
+              href="/MohammadShaad_resume.pdf"
+              class="resume-download-btn"
+              download="MohammadShaad_resume.pdf"
+              ><i class="fa-solid fa-cloud-arrow-down"></i> DOWNLOAD MY
+              RESUME</a
+            >
           </div>
-          <a href="/MohammadShaad_resume.pdf" class="resume-download-btn" download="MohammadShaad_resume.pdf"><i
-              class="fa-solid fa-cloud-arrow-down"></i> DOWNLOAD
-            MY RESUME</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="portfolio" data-aos="fade-up">
-    <div class="portfolio-container">
-      <div class="portfolio-wrapper">
-        <div class="uiux">
-          <a href="uiux.html" target="_blank" class="card-view">
-            <i class="figma-logo fa-brands fa-figma"></i>
-            <div class="card-text">
-              <h3 class="card-title">Design</h3>
-              <p class="card-detail">My UI/UX Designing Portfolio</p>
-            </div>
-            <!-- <a href="uiux.html" target="_blank" class="card-view">View</a> -->
-          </a>
-        </div>
-        <div class="webdev">
-          <a href="webdev.html" target="_blank" class="card-view">
-            <i class="github-logo fa-brands fa-github"></i>
-            <div class="card-text">
-              <h3 class="card-title">WebDev</h3>
-              <p class="card-detail">My Web Development Portfolio</p>
-            </div>
-            <!-- <a href="webdev.html" target="_blank" class="card-view">View</a> -->
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="blogs" data-aos="fade-up">
-    <div class="blog-container swiper">
-      <div class="blog-wrapper">
-        <div class="blog-title">
-          <h3>MY BLOGS</h3>
-        </div>
-        <div class="slide-container swiper">
-          <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-              <div class="card swiper-slide">
-                <div class="image-content">
-
-                  <div class="card-image">
-                    <img src="images/blog1.webp" alt="" class="card-img">
-                  </div>
-                </div>
-
-                <div class="card-content">
-                  <h2 class="name">Characteristics of a Good User Experience</h2>
-                  <p class="description">Good design is easy to spot but often hard to pin down. What exactly makes a
-                    product effective to its users?
-                  </p>
-
-                  <a href="https://medium.com/@mohammad-shaad/characteristics-of-a-good-user-experience-cb4fb7a6a296"
-                    target="_blank" class="viewmore-button">View More</a>
-                </div>
+    <section id="portfolio" data-aos="fade-up">
+      <div class="portfolio-container">
+        <div class="portfolio-wrapper">
+          <div class="uiux">
+            <a href="uiux.html" target="_blank" class="card-view">
+              <i class="figma-logo fa-brands fa-figma"></i>
+              <div class="card-text">
+                <h3 class="card-title">Design</h3>
+                <p class="card-detail">My UI/UX Designing Portfolio</p>
               </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-
-                  <div class="card-image">
-                    <img src="images/blog5.webp" alt="" class="card-img">
-                  </div>
-                </div>
-
-                <div class="card-content">
-                  <h2 class="name">Getting Started with Open-Source</h2>
-                  <p class="description">Open-source software has become an increasingly important part of the modern
-                    tech landscape
-                  </p>
-
-                  <a href="https://mohammadshaad.hashnode.dev/getting-started-with-open-source" target="_blank"
-                    class="viewmore-button">View More</a>
-                </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-
-                  <div class="card-image">
-                    <img src="images/blog2.webp" alt="" class="card-img">
-                  </div>
-                </div>
-
-                <div class="card-content">
-                  <h2 class="name">4 Ways to Bind Event Handlers in React</h2>
-                  <p class="description">We bind event handlers in react because of the way THIS keyword works in
-                    JavaScript
-                  </p>
-
-                  <a href="https://medium.com/@mohammad-shaad/4-ways-to-bind-event-handlers-in-react-8d0f8454dd13"
-                    target="_blank" class="viewmore-button">View More</a>
-                </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-
-                  <div class="card-image">
-                    <img src="images/blog3.webp" alt="" class="card-img">
-                  </div>
-                </div>
-
-                <div class="card-content">
-                  <h2 class="name">Conditional Rendering in React</h2>
-                  <p class="description">You may often need to show or hide
-                    some HTML based on a certain condition
-                  </p>
-
-                  <a href="https://medium.com/@mohammad-shaad/conditional-rendering-in-react-64c389345ed1"
-                    target="_blank" class="viewmore-button">View More</a>
-                </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-
-                  <div class="card-image">
-                    <img src="images/blog4.webp" alt="" class="card-img">
-                  </div>
-                </div>
-
-                <div class="card-content">
-                  <h2 class="name">List Rendering in React</h2>
-                  <p class="description">In React, you can use a list rendering technique when you want to render a list
-                    of items based on an array of data
-                  </p>
-
-                  <a href="https://medium.com/@mohammad-shaad/list-rendering-in-react-74887b98f04" target="_blank"
-                    class="viewmore-button">View More</a>
-                </div>
-              </div>
-
-
-            </div>
+              <!-- <a href="uiux.html" target="_blank" class="card-view">View</a> -->
+            </a>
           </div>
-
-          <div class="swiper-button-next swiper-navBtn"></div>
-          <div class="swiper-button-prev swiper-navBtn"></div>
-          <div class="swiper-pagination"></div>
+          <div class="webdev">
+            <a href="webdev.html" target="_blank" class="card-view">
+              <i class="github-logo fa-brands fa-github"></i>
+              <div class="card-text">
+                <h3 class="card-title">WebDev</h3>
+                <p class="card-detail">My Web Development Portfolio</p>
+              </div>
+              <!-- <a href="webdev.html" target="_blank" class="card-view">View</a> -->
+            </a>
+          </div>
         </div>
-
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- <section id="resume" data-aos="fade-up">
+    <section id="blogs" data-aos="fade-up">
+      <div class="blog-container swiper">
+        <div class="blog-wrapper">
+          <div class="blog-title">
+            <h3>MY BLOGS</h3>
+          </div>
+          <div class="slide-container swiper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/blog1.webp" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">
+                      Characteristics of a Good User Experience
+                    </h2>
+                    <p class="description">
+                      Good design is easy to spot but often hard to pin down.
+                      What exactly makes a product effective to its users?
+                    </p>
+
+                    <a
+                      href="https://medium.com/@mohammad-shaad/characteristics-of-a-good-user-experience-cb4fb7a6a296"
+                      target="_blank"
+                      class="viewmore-button"
+                      >View More</a
+                    >
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/blog5.webp" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">Getting Started with Open-Source</h2>
+                    <p class="description">
+                      Open-source software has become an increasingly important
+                      part of the modern tech landscape
+                    </p>
+
+                    <a
+                      href="https://mohammadshaad.hashnode.dev/getting-started-with-open-source"
+                      target="_blank"
+                      class="viewmore-button"
+                      >View More</a
+                    >
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/blog2.webp" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">4 Ways to Bind Event Handlers in React</h2>
+                    <p class="description">
+                      We bind event handlers in react because of the way THIS
+                      keyword works in JavaScript
+                    </p>
+
+                    <a
+                      href="https://medium.com/@mohammad-shaad/4-ways-to-bind-event-handlers-in-react-8d0f8454dd13"
+                      target="_blank"
+                      class="viewmore-button"
+                      >View More</a
+                    >
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/blog3.webp" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">Conditional Rendering in React</h2>
+                    <p class="description">
+                      You may often need to show or hide some HTML based on a
+                      certain condition
+                    </p>
+
+                    <a
+                      href="https://medium.com/@mohammad-shaad/conditional-rendering-in-react-64c389345ed1"
+                      target="_blank"
+                      class="viewmore-button"
+                      >View More</a
+                    >
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img src="images/blog4.webp" alt="" class="card-img" />
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">List Rendering in React</h2>
+                    <p class="description">
+                      In React, you can use a list rendering technique when you
+                      want to render a list of items based on an array of data
+                    </p>
+
+                    <a
+                      href="https://medium.com/@mohammad-shaad/list-rendering-in-react-74887b98f04"
+                      target="_blank"
+                      class="viewmore-button"
+                      >View More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="resume" data-aos="fade-up">
     <div class="resume">
       <h3 class="resume-download">DOWNLOAD MY RESUME</h3>
 
@@ -319,142 +386,140 @@
     </div>
   </section> -->
 
-  <section id="skills" data-aos="fade-up">
-
-
-    <div class="skills-container">
-      <h3 class="skills-header">MY SKILLS</h3>
-      <div class="skills-wrapper" data-aos="fade-up">
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/html-5.webp" alt="">
+    <section id="skills" data-aos="fade-up">
+      <div class="skills-container">
+        <h3 class="skills-header">MY SKILLS</h3>
+        <div class="skills-wrapper" data-aos="fade-up">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/html-5.webp" alt="" />
+            </div>
+            <span>HTML</span>
           </div>
-          <span>HTML</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/css-3.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/css-3.webp" alt="" />
+            </div>
+            <span>CSS</span>
           </div>
-          <span>CSS</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/js.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/js.webp" alt="" />
+            </div>
+            <span>JavaScript</span>
           </div>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/nodejs.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/nodejs.webp" alt="" />
+            </div>
+            <span>NodeJS</span>
           </div>
-          <span>NodeJS</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/express.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/express.webp" alt="" />
+            </div>
+            <span>ExpressJS</span>
           </div>
-          <span>ExpressJS</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/bootstrap.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/bootstrap.webp" alt="" />
+            </div>
+            <span>Bootstrap</span>
           </div>
-          <span>Bootstrap</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/tailwind.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/tailwind.webp" alt="" />
+            </div>
+            <span>Tailwind</span>
           </div>
-          <span>Tailwind</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/react.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/react.webp" alt="" />
+            </div>
+            <span>ReactJS</span>
           </div>
-          <span>ReactJS</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/c.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/c.webp" alt="" />
+            </div>
+            <span>C</span>
           </div>
-          <span>C</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/cpp.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/cpp.webp" alt="" />
+            </div>
+            <span>C++</span>
           </div>
-          <span>C++</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/python.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/python.webp" alt="" />
+            </div>
+            <span>Python</span>
           </div>
-          <span>Python</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/java.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/java.webp" alt="" />
+            </div>
+            <span>Java</span>
           </div>
-          <span>Java</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/git.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/git.webp" alt="" />
+            </div>
+            <span>Git</span>
           </div>
-          <span>Git</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/github.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/github.webp" alt="" />
+            </div>
+            <span>GitHub</span>
           </div>
-          <span>GitHub</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/figma.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/figma.webp" alt="" />
+            </div>
+            <span>Figma</span>
           </div>
-          <span>Figma</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/mongo.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/mongo.webp" alt="" />
+            </div>
+            <span>MongoDB</span>
           </div>
-          <span>MongoDB</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/mysql.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/mysql.webp" alt="" />
+            </div>
+            <span>MySQL</span>
           </div>
-          <span>MySQL</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/premiere.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/premiere.webp" alt="" />
+            </div>
+            <span>Premiere Pro</span>
           </div>
-          <span>Premiere Pro</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/photoshop.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/photoshop.webp" alt="" />
+            </div>
+            <span>Photoshop</span>
           </div>
-          <span>Photoshop</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/illustrator.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/illustrator.webp" alt="" />
+            </div>
+            <span>Illustrator</span>
           </div>
-          <span>Illustrator</span>
-        </div>
-        <div class="skill">
-          <div class="skills-logo">
-            <img src="./icons/aftereffects.webp" alt="">
+          <div class="skill">
+            <div class="skills-logo">
+              <img src="./icons/aftereffects.webp" alt="" />
+            </div>
+            <span>After Effects</span>
           </div>
-          <span>After Effects</span>
         </div>
       </div>
-    </div>
 
-    <!-- <div class="skill-bars">
+      <!-- <div class="skill-bars">
       <div class="bar">
         <div class="info">
           <span>HTML</span>
@@ -592,118 +657,150 @@
         </div>
       </div>
     </div> -->
+    </section>
 
-  </section>
+    <footer data-aos="fade-up">
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <p class="line-1">GET IN TOUCH</p>
+          <p class="line-2">
+            Have any suggestion or interested in working together on a project?
+            Go ahead, I’d like to connect with you.
+          </p>
+          <a href="mailto:callshaad@gmail.com" class="send-an-email"
+            >send an email</a
+          >
 
-  <footer data-aos="fade-up">
-    <div class="footer-container">
-      <div class="footer-wrapper">
-        <p class="line-1">GET IN TOUCH</p>
-        <p class="line-2">
-          Have any suggestion or interested in working together on a project?
-          Go ahead, I’d like to connect with you.
-        </p>
-        <a href="mailto:callshaad@gmail.com" class="send-an-email">send an email</a>
+          <div class="socialbtns">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mohammad-shaad-shaikh/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in linkedin"></i>
+                </a>
+              </li>
 
-        <div class="socialbtns">
+              <li>
+                <a
+                  href="https://www.behance.net/mohammadshaad/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-behance behance re"></i>
+                </a>
+              </li>
 
-          <ul>
+              <li>
+                <a
+                  href="https://www.dribbble.com/mohammadshaad/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-dribbble dribbble re"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.linkedin.com/in/mohammad-shaad-shaikh/" target="_blank">
-                <i class="fa-brands fa-linkedin-in linkedin"></i>
-              </a>
-            </li>
+              <li>
+                <a href="https://www.github.com/mohammadshaad/" target="_blank">
+                  <i class="fa-brands fa-github github"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.behance.net/mohammadshaad/" target="_blank">
-                <i class="fa-brands fa-behance behance re"></i>
-              </a>
-            </li>
+              <li>
+                <a href="https://mohammadshaad.hashnode.dev/" target="_blank">
+                  <i class="fa-brands fa-hashnode hashnode"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.dribbble.com/mohammadshaad/" target="_blank">
-                <i class="fa-brands fa-dribbble dribbble re"></i>
-              </a>
-            </li>
+              <li>
+                <a
+                  href="https://www.twitter.com/MohammadShaadsk/"
+                  target="_blank"
+                >
+                  <!-- <i class="fa-brands fa-twitter twitter"></i> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    style="
+                      height: 34px;
+                      position: relative;
+                      top: 3px;
+                    "
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.github.com/mohammadshaad/" target="_blank">
-                <i class="fa-brands fa-github github"></i>
-              </a>
-            </li>
+              <li>
+                <a href="https://www.instagram.com/ig.shaad/" target="_blank">
+                  <i class="fa-brands fa-instagram instagram"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://mohammadshaad.hashnode.dev/" target="_blank">
-                <i class="fa-brands fa-hashnode hashnode"></i>
-              </a>
-            </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/officialshaad/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f facebook"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.twitter.com/MohammadShaadsk/" target="_blank">
-                <!-- <i class="fa-brands fa-twitter twitter"></i> -->
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="    height: 38px;
-                /* width: 46px; */
-                position: relative;
-                top: 3px;" viewBox="0 0 24 24">
-                  <path d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"></path>
-                </svg>
-              </a>
-            </li>
-            
+              <li>
+                <a
+                  href="https://www.medium.com/@mohammad-shaad/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-medium medium"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.instagram.com/ig.shaad/" target="_blank">
-                <i class="fa-brands fa-instagram instagram"></i>
-              </a>
-            </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/TRANQUILITYINDIA/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-youtube youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <a href="https://www.facebook.com/officialshaad/" target="_blank">
-                <i class="fa-brands fa-facebook-f facebook"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.medium.com/@mohammad-shaad/" target="_blank">
-                <i class="fa-brands fa-medium medium"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.youtube.com/TRANQUILITYINDIA/" target="_blank">
-                <i class="fa-brands fa-youtube youtube"></i>
-              </a>
-            </li>
-
-          </ul>
-
+          <p class="credit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-c-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+              />
+            </svg>
+            Designed & Developed by Mohammad Shaad
+          </p>
         </div>
-
-        <p class="credit">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-c-circle"
-            viewBox="0 0 16 16">
-            <path
-              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
-          </svg>
-          Designed & Developed by Mohammad Shaad
-        </p>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offest: 400,
-      duration: 800,
-    });
-  </script>
-  <script src="js/script.js"></script>
-  <script src="js/blogs.js"></script>
-</body>
-
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offest: 400,
+        duration: 800,
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/blogs.js"></script>
+  </body>
 </html>
 
 <!-- 
