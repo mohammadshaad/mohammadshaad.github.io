@@ -1000,6 +1000,12 @@ h1::selection {
     margin: 20px;
   }
 
+  .twitter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .socialbtns ul {
     list-style: none;
     display: flex;
@@ -1933,6 +1939,12 @@ h1::selection {
     color: var(--Black);
     font-size: 25px;
     margin: 10px;
+  }
+
+  .twitter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .socialbtns ul {
