@@ -86,6 +86,59 @@ html {
   animation: fill 4s ease;
 }
 
+.ticker-wrap {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  bottom: 0;
+  height: 2.5rem;
+  background: linear-gradient(30deg, var(--LightBlue), var(--DarkBlue) 100%);
+}
+
+.ticker {
+  display: inline-block;
+  margin-top: 8px;
+  animation: marquee 40s linear infinite;
+}
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 40s linear infinite;
+}
+
+.item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--White);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Transition */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes swap {
+  0%,
+  50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+
 @keyframes fill {
   0% {
     width: 0%;
@@ -354,9 +407,10 @@ h1::selection {
   .hero .hero-items {
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    text-align: center;
+    margin-left: 40px;
   }
 
   .hero-hello {
@@ -376,7 +430,7 @@ h1::selection {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
+    text-align: left;
     line-height: 109.9%;
     margin-bottom: 8px;
     width: 360px;
@@ -412,6 +466,18 @@ h1::selection {
   }
 
   /* HOME SECTION ENDS HERE */
+
+  .ticker-wrap {
+    position: relative;
+    bottom: 60px;
+  }
+  
+  .item {
+    display: inline-block;
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+  }
+
 
   /* ABOUT SECTION STARTS HERE */
 
@@ -844,7 +910,6 @@ h1::selection {
     width: 90%;
   }
 
-
   #skills {
     height: 1800px;
     display: flex;
@@ -892,7 +957,7 @@ h1::selection {
     transform: scale(1);
     transition: all 0.3s;
   }
-  
+
   .skill:hover {
     box-shadow: 0px 0px 10px 1px #26262680;
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
@@ -900,7 +965,7 @@ h1::selection {
     transition: all 0.3s;
     color: var(--White);
   }
-  
+
   .skills-logo {
     width: 50px;
     height: 50px;
@@ -915,7 +980,6 @@ h1::selection {
     font-size: 15px;
     font-weight: 500;
   }
-
 
   footer {
     background: rgb(224, 224, 224);
@@ -1104,32 +1168,29 @@ h1::selection {
 
   .hero {
     animation: 4s ease-out 0s 1 slideInFromTop;
-    position: relative;
-    top: 5%;
-    padding: 60px 0px;
+    height: 100%;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
   .hero .hero-items {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
   }
 
   .hero-hello {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 10px;
   }
 
   .hero-name {
-    font-size: 60px;
+    font-size: 80px;
     background: -webkit-linear-gradient(
       0deg,
       var(--LightBlue),
@@ -1137,7 +1198,7 @@ h1::selection {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     line-height: 109.9%;
   }
 
@@ -1147,7 +1208,7 @@ h1::selection {
     color: var(--Grey);
     border: none;
     background: none;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     padding: 14px 0px;
     letter-spacing: 1px;
@@ -1641,7 +1702,7 @@ h1::selection {
     transform: scale(1);
     transition: all 0.3s;
   }
-  
+
   .skill:hover {
     box-shadow: 0px 0px 10px 1px #26262680;
     background: linear-gradient(90deg, var(--LightBlue), var(--DarkBlue));
@@ -1649,7 +1710,6 @@ h1::selection {
     transition: all 0.3s;
     color: var(--White);
   }
-
 
   .skills-logo {
     width: 50px;
@@ -1665,8 +1725,6 @@ h1::selection {
     font-size: 15px;
     font-weight: 500;
   }
-
-
 
   /*   
   .skill-bars{
