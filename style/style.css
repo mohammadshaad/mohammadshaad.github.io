@@ -539,7 +539,7 @@ h1::selection {
     margin-bottom: 20px;
     line-height: 210%;
     color: var(--Black);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     text-align: justify;
   }
@@ -1293,7 +1293,7 @@ h1::selection {
     margin-bottom: 20px;
     line-height: 200%;
     color: var(--Black);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     text-align: justify;
   }
